@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  
+
+<div class="wrapper">
+    
+    <div class="header"></div>
+    <div class="content">
+        <div class="baner">
+            <ul>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+                <li>menu</li>
+            </ul>
+         
+            <h2>cake <br>
+            Другой более гораздо белееееееее длиныый тексссст</h2>
+            <ul class="choice">
+                <li>
+                <figure> <img src="avtor.jpg" >
+                    <figcaption>Домашние торты</figcaption>
+                </figure>    
+                </li>
+                <li>
+                    <figure> <img src="avtor.jpg" >
+                        <figcaption>Домашние торты</figcaption>
+                    </figure>    
+                    </li>
+                    <li>
+                        <figure> <img src="avtor.jpg" >
+                            <figcaption>Домашние торты</figcaption>
+                        </figure>    
+                        </li>
+                        <li>
+                            <figure> <img src="avtor.jpg" >
+                                <figcaption>Домашние торты</figcaption>
+                            </figure>    
+                            </li>
+            </ul>
+            </div>
+            
+
+            <div class="wrap_about">
+                <h2 class="about_h2">Загаловок</h2>
+                <img class="about_img" src="avtor.jpg" >
+                   <p class="about_p">не люблю ходить в гости с пустыми руками. Всегда беру свои торты. Так пошло по накатанной:
+                    к одним друзьям в гости я пришла с тортом, затем к другим. А потом, когда я встретила своего мужа,
+                    он предложил помочь организовать свое дело и отправил меня совершенствовать мои навыки.
+                    В Москве я побывала на многих мастер-классах именитых французских кондитеров. Я успела поучиться
+                    у Мишеля Вийома, чемпиона мира по кондитерскому мастерству, у 22-летнего Николя Пиеро, победителя многих
+                    кондитерских соревнований Франкве я побывала на многих мастер-классах именитых французских кондитеров. Я успела поучиться
+                    у Мишеля Вийома, чемпиона мира по кондитерскому мастерству, у 22-летнего Николя Пиеро, победителя многих
+                    кондитерских соревнований Франции и Европы. А совсем недавно я веmрнулась из Барселоны, где толком и
+                    город посмотреть не успела, потому чткве я побывала на многих мастер-классах именитых французских кондитеров. Я успела поучиться
+                    у Мишеля Вийома, чемпиона мира по кондитерскому мастерству, у 22-летнего Николя Пиеро, победителя многих
+                    кондитерских соревнований Франции и Европы. А совсем недавно я веmрнулась из Барселоны, где толком и
+                    город посмот</p>    
+        </div>
+        <div class="wrap_about2">
+            <h2 class="about_h2">Загаловок</h2>
+            <img class="about_img" src="avtor.jpg" >
+               <p class="about_p">не люблю ходить в гости с пустыми руками. Всегда беру свои торты. Так пошло по накатанной:
+                к одним друзьям в гости я пришла с тортом, затем к другим. А потом, когда я встретила своего мужа,
+                он предложил помочь организовать свое дело и отправил меня совершенствовать мои навыки.
+                В Москве я побывала на многих мастер-классах именитых французских кондитеров. Я успела поучиться
+                у Мишеля Вийома, чемпиона мира по кондитерскому мастерству, у 22-летнего Николя Пиеро, победителя многих
+                кондитерских соревнований Франкве я побывала на многих мастер-классах именитых французских кондитеров. Я успела поучиться
+                у Мишеля Вийома, чемпиона мира по кондитерскому мастерству, у 22-летнего Николя Пиеро, победителя многих
+                кондитерских соревнований Франции и Европы. А совсем недавно я веmрнулась из Барселоны, где толком и
+                город посмотреть не успела, потому чткве я побывала на многих мастер-классах именитых французских кондитеров. Я успела поучиться
+                у Мишеля Вийома, чемпиона мира по кондитерскому мастерству, у 22-летнего Николя Пиеро, победителя многих
+                кондитерских соревнований Франции и Европы. А совсем недавно я веmрнулась из Барселоны, где толком и
+                город посмот</p>    
+    </div>
+
+ 
+        
+</div>
+<div class="footer"></div>
+</div>
+
+<style>
+*{ padding: 0;
+    margin: 0;}
+
+html, body { height: 100%; }
+
+.wrapper
+{  min-height: 100%;
+    display: grid;
+    grid-template: minmax(30px, auto)   1fr  minmax(70px, auto) / 10% 1fr 10% ;
+    
+}
+.header{
+background-color: rgba(241, 144, 196, 0.53);
+grid-area: 1/1/2/4;
+}
+.content{
+    background-color: rgb(164, 156, 254);
+grid-area: 2/2/3/3;
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: 200px 1fr 1fr ;
+grid-auto-rows: 10%;
+
+}
+.footer{
+background-color: rgba(249, 108, 183, 0.53);
+grid-area: 3/1/4/4
+}
+
+
+.baner{
+    background-color: rgb(238, 190, 190);
+    grid-area: 1/1/2/9;
+    display: grid;
+    grid-template: 20%   20%  60%/ repeat(4,1fr);
+}
+ul{ 
+      display: flex;
+    padding-left: 0; 
+    list-style: none;
+    justify-content: space-around;
+    background-color:rgba(236, 16, 133, 0.3);
+    grid-area: 1/1/2/5;
+}
+
+
+
+h2{
+    padding: 0;
+    margin: 0; 
+    font-style:italic;
+    font-size: medium;
+    grid-area: 2/1/3/5;
+    text-align: center;
+}
+img{
+    height: 4em;
+    border-radius: 30px;
+}
+figcaption{
+    background-color:rgba(236, 16, 133, 0.3) ;
+}
+
+.choice{
+    background-color:transparent;
+    grid-area: 3/1/4/5;
+}
+
+
+
+.wrap_about{
+    grid-area: 2/1/3/9;
+    display: grid;
+    grid-template: 30px 1fr / repeat(8,1fr);
+   
+}
+.about_h2{
+    padding: 10px;
+    font-size: large;
+    grid-area: 1/1/2/9;
+    text-align: center;
+}
+.about_p{
+    padding: 10px;
+    text-align:justify;
+    grid-area: 2/4/3/9
+
+}
+.about_img{
+    padding-left: 10px;
+    height: 300px;
+    width: 220px;
+    grid-area: 2/1/3/4;
+    padding-bottom: 10px;
+}
+
+.wrap_about2{
+    grid-area: 3/1/4/9;
+    display: grid;
+    grid-template: 30px 1fr / repeat(8,1fr);
+}
+
+
+
+</style>
+</body>
+</html>
