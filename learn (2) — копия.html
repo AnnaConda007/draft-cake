@@ -15,7 +15,13 @@
 <div class="wrapper">
     
     <div class="header">
-    
+        <ul class="header_r">
+            <li>logo</li>
+        </ul>
+        <ul class="header_left">
+            <li>what's up</li>
+            <li>8-996-972-28-59</li>
+        </ul>
     </div>
     <div class="content">
         <div class="baner">
@@ -118,9 +124,33 @@ html, body { height: 100%; }
 
 
 
-.header{
-background-color: rgb(238, 190, 190);
-grid-area: 1/1/2/4;
+.header{ 
+    grid-area: 1/2/2/3;
+    justify-content: flex-start;
+    display: grid;
+    grid-template:1fr/1fr 1fr;
+    align-items: center;
+}
+.header_r{
+    display: flex;
+    grid-area: 1/1/2/2;
+    justify-content: flex-start;
+    padding-left: 20px;
+    background-color:  rgb(238, 190, 190);
+   
+}
+
+.header_left{
+    display: flex;
+    grid-area: 1/2/2/3;
+    justify-content: flex-end;
+    padding-right: 20px;
+    background-color:  rgb(238, 190, 190);
+    
+}
+.header_left>li{
+    padding-right: 10px;
+
 }
 .content{
     background-color: rgb(164, 156, 254);
@@ -166,6 +196,7 @@ ul{
     background-color:rgba(249, 108, 183, 0.53);
     grid-area: 1/1/2/5;
     height: 100%;
+    align-items: center;
 }
 
 a{
@@ -239,6 +270,9 @@ figcaption{
     .about_img{
         grid-area: 3/1/4/9
     }
+     .header{
+        grid-area: 1/1/2/4;
+    }
 }
 
 @media (max-width: 600px) {
@@ -251,6 +285,12 @@ figcaption{
     .about_img{
         grid-area: 3/1/4/9
     }
+    .header{
+        grid-area: 1/1/2/4;
+    }
+.header_r{
+    padding-left: 20%;
+}
 
 
     
